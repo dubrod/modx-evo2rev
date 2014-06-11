@@ -2,6 +2,9 @@
 
 $data = file_get_contents("modx_site_content.csv");
 
+//update site url - [(site_url)]
+$data = str_replace("[(site_url)]","[[++site_url]]", $data);
+
 //update links
 $data = str_replace("[~","[[~", $data);
 $data = str_replace("~]","]]", $data);
