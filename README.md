@@ -157,6 +157,7 @@ to
    &hooks=`email,redirect`
    &emailTpl=`ContactFormReport`
    &emailTo=`wayne@modx.com`
+   &emailUseFieldForSubject=`1`
    &redirectTo=`46`
    &validate=`
       name:required,
