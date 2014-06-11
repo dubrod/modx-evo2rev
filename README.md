@@ -119,10 +119,13 @@ $insert = "INSERT INTO `modx_site_htmlsnippets` (`id`, `name`, `description`, `e
 
 Changing that standard Parent #2 Ditto snippet to **getResources**
 
-```[[Ditto? &parents=`2` &display=`2` &removeChunk=`Comments` &tpl=`ditto_blog` &paginate=`1` &extenders=`summary,dateFilter` &paginateAlwaysShowLinks=`1` &tagData=`documentTags`]]
+```
+[[Ditto? &parents=`2` &display=`2` &removeChunk=`Comments` &tpl=`ditto_blog` &paginate=`1` &extenders=`summary,dateFilter` &paginateAlwaysShowLinks=`1` &tagData=`documentTags`]]
 ```
 
-```[[getResources? &parents=`2` &tpl=`ditto_blog`]]```
+```
+[[getResources? &parents=`2` &tpl=`ditto_blog`]]
+```
 
 Visit http://rtfm.modx.com/extras/revo/getresources for more information
 
@@ -180,7 +183,11 @@ and change the `id=cf...` name structure
 
 visit http://rtfm.modx.com/extras/revo/formit/formit.tutorials-and-examples/formit.examples.simple-contact-page for more examples of the form HTML
 
-`[[+validationmessage]]` becomes ```[[!+fi.error_message:notempty=`<p>[[!+fi.error_message]]</p>`]]```
+`[[+validationmessage]]` becomes 
+
+```
+[[!+fi.error_message:notempty=`<p>[[!+fi.error_message]]</p>`]]
+```
 
 > the ContactFormReport aka Email Template should have placeholders already updated if you did the update-tags.php on your chunks.
 
