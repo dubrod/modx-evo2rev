@@ -119,6 +119,22 @@ $insert = "INSERT INTO `modx_site_htmlsnippets` (`id`, `name`, `description`, `e
 
 ---
 
+##Template Variables (modx_site_tmplvars)
+
+> "Display Params" is no more, tested using "output_properties"
+
+Run update-tags.php on this if you like, its usually standard stuff from evo. Just add this:
+
+`(id,type,name,caption,description,editor_type,category,locked,elements,rank,display,output_properties,default_text)`
+
+to your SQL command.
+
+```
+INSERT INTO `modx_site_tmplvars` (id,type,name,caption,description,editor_type,category,locked,elements,rank,display,output_properties,default_text) VALUES ('16','textarea','eventsCost','Cost','','0','14','0','','0','','','');
+```
+
+---
+
 ##Ditto
 
 Changing that standard Parent #2 Ditto snippet to **getResources**
