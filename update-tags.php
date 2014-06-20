@@ -24,6 +24,10 @@ $data = str_replace("*]","]]", $data);
 $data = str_replace("[+","[[+", $data);
 $data = str_replace("+]","]]", $data);
 
+//update non-cached
+$data = str_replace("[!","[[!", $data);
+$data = str_replace("!]","]]", $data);
+
 //escape single quotes
 $data = str_replace("'","\'", $data);
 
