@@ -127,12 +127,12 @@ $insert = "INSERT INTO `modx_site_htmlsnippets`
 
 Run update-tags.php on this if you like, its usually standard stuff from evo. Just add this:
 
-`(id,type,name,caption,description,editor_type,category,locked,elements,rank,display,output_properties,default_text)`
+`(id,source,property_preprocess,type,name,caption,description,editor_type,category,locked,elements,rank,display,output_properties,default_text)`
 
 to your SQL command.
 
 ```
-INSERT INTO `modx_site_tmplvars` (id,type,name,caption,description,editor_type,category,locked,elements,rank,display,output_properties,default_text) VALUES ('16','textarea','eventsCost','Cost','','0','14','0','','0','','','');
+INSERT INTO `modx_site_tmplvars` (id,source,property_preprocess,type,name,caption,description,editor_type,category,locked,elements,rank,display,output_properties,default_text) VALUES ('1',1,0,'textarea','css','CSS','','0','2','0','','0','','','');
 ```
 
 ---
