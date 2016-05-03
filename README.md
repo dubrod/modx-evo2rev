@@ -112,7 +112,9 @@ Same Scenario.
 9. duplicate migration-expert.php and edit line 12 & line 28
 10. New **$insert**:
 ```
-$insert = "INSERT INTO `modx_site_htmlsnippets` (`id`, `name`, `description`, `editor_type`, `category`, `cache_type`, `snippet`, `locked`) VALUES ('".$csv_row[id]."','".$csv_row[name]."','".$csv_row[description]."','".$csv_row[editor_type]."','".$csv_row[category]."','".$csv_row[cache_type]."','".$csv_row[snippet]."','".$csv_row[locked]."')";
+$insert = "INSERT INTO `modx_site_htmlsnippets` 
+(`id`, `source`, `property_preprocess`, `name`, `description`, `editor_type`, `category`, `cache_type`, `snippet`, `locked`, `properties`, `static`, `static_file`) VALUES 
+('".$csv_row[id]."',1,0,'".$csv_row[name]."','".$csv_row[description]."','".$csv_row[editor_type]."','".$csv_row[category]."','".$csv_row[cache_type]."','".$csv_row[snippet]."','".$csv_row[locked]."','a:0:{}',0,'')";
 ```
 11. run 
 12. check your manager, live site for renderings
