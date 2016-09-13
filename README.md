@@ -25,7 +25,7 @@
 
 The *update-tags* script removes line breaks from content for you but you'll need to go add them back in at the end of the the data rows.
 
-1. Open TextEdit and hit enter after "hidemenu" so the next line starts with "1"
+1. Open TextEdit and hit enter after "*alias_visible*" so the next line starts with "1"
 2. Next i did a find for "document" since that is going to be the 2nd value for every line, then hit enter
 before the number (id) that is before "document". thats starts a new record. It's hard to explain but you can do a find/replace for the end value `,"1""` and replace with a line break.
 ```
