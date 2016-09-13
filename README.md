@@ -28,6 +28,8 @@ The *update-tags* script removes line breaks from content for you but you'll nee
 1. Open TextEdit and hit enter after "*alias_visible*" so the next line starts with "1"
 2. Next i did a find for "document" since that is going to be the 2nd value for every line, then hit enter
 before the number (id) that is before "document". thats starts a new record. It's hard to explain but you can do a find/replace for the end value `,"1""` and replace with a line break.
+ * AND `,"0""` for templates and unpublished resources *
+ 
 ```
 ,"1"
 "
